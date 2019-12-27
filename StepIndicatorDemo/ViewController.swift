@@ -21,19 +21,20 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         // In this demo, the customizations have been done in Storyboard.
         
         // Customization by coding:
-        //self.stepIndicatorView.numberOfSteps = 5
-        //self.stepIndicatorView.currentStep = 0
-        //self.stepIndicatorView.circleColor = UIColor(red: 179.0/255.0, green: 189.0/255.0, blue: 194.0/255.0, alpha: 1.0)
-        //self.stepIndicatorView.circleTintColor = UIColor(red: 0.0/255.0, green: 180.0/255.0, blue: 124.0/255.0, alpha: 1.0)
-        //self.stepIndicatorView.circleStrokeWidth = 3.0
-        //self.stepIndicatorView.circleRadius = 10.0
-        //self.stepIndicatorView.lineColor = self.stepIndicatorView.circleColor
-        //self.stepIndicatorView.lineTintColor = self.stepIndicatorView.circleTintColor
-        //self.stepIndicatorView.lineMargin = 4.0
-        //self.stepIndicatorView.lineStrokeWidth = 2.0
-        //self.stepIndicatorView.displayNumbers = false //indicates if it displays numbers at the center instead of the core circle
-        //self.stepIndicatorView.direction = .leftToRight
-        //self.stepIndicatorView.showFlag = true
+        self.stepIndicatorView.centerTextColor = .white
+        self.stepIndicatorView.numberOfSteps = 5
+        self.stepIndicatorView.currentStep = 0
+        self.stepIndicatorView.circleColor = UIColor.red.withAlphaComponent(0.35)
+        self.stepIndicatorView.circleTintColor = .blue
+        self.stepIndicatorView.circleStrokeWidth = 10.0
+        self.stepIndicatorView.circleRadius = 10.0
+        self.stepIndicatorView.lineColor = .gray
+        self.stepIndicatorView.lineTintColor = .brown
+        self.stepIndicatorView.lineMargin = 4.0
+        self.stepIndicatorView.lineStrokeWidth = 1.0
+        self.stepIndicatorView.displayNumbers = true 
+        self.stepIndicatorView.direction = .leftToRight
+        self.stepIndicatorView.showFlag = true
 
         // Example for apply constraints programmatically, enable it for test.
         //self.applyNewConstraints()

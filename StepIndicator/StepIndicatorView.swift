@@ -86,6 +86,12 @@ public class StepIndicatorView: UIView {
         }
     }
     
+    @IBInspectable public var centerTextColor:UIColor = defaultColor {
+        didSet {
+            self.updateSubLayers()
+        }
+    }
+    
     @IBInspectable public var lineColor:UIColor = defaultColor {
         didSet {
             self.updateSubLayers()
@@ -228,6 +234,7 @@ public class StepIndicatorView: UIView {
         annularLayer.lineWidth = self.circleStrokeWidth
         annularLayer.displayNumber = self.displayNumbers
         annularLayer.showFlag = self.showFlag
+        annularLayer.centerTextColor = self.centerTextColor
     }
     
     private func applyLineStyle(lineLayer:LineLayer) {
